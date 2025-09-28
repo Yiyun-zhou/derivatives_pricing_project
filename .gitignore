@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.venv
+venv/
+ENV/
+
+# VS Code
+.vscode/.ropeproject
+
+# Jupyter
+jupyter-*.json
+
+# OS
+.DS_Store
+Thumbs.db

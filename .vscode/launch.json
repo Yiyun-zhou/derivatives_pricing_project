@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Notebook Kernel",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/ipython",
+      "args": [
+        "notebooks/DerivativesPricing.ipynb"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Monte Carlo",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/deriv_pricing/monte_carlo.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
