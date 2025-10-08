@@ -9,13 +9,12 @@ Extensions include **variance reduction techniques** and **continuous dividend y
 
 ## 📝 Project Status
 - **First Version Released:** 2025-09-15  
-- **Last Update:** 2025-09-28  
+- **Last Update:** 2025-10-08
 
 ### Planned Extensions
 - [ ] Additional Greeks (Theta, Rho)  
-- [ ] Hedging strategy simulation (e.g., Delta-hedging P&L)  
-- [ ] Exotic options prototypes (Asian, Barrier)  
-- [ ] Volatility surface construction  
+- [ ] Exotic options prototypes (Asian, Barrier)  *Note: Barrier done on 10-08-2025*
+- [ ] Volatility Surface deeper extensions (sticky-delta, sticky-strike)
 
 ---
 
@@ -54,6 +53,8 @@ src/deriv_pricing/
   utils.py          # Common helpers (e.g., discounting)
   black_scholes.py  # Black–Scholes pricers + closed-form Greeks
   implied_vol.py    # Implied volatility solvers (Brentq, Newton, Bisection)
+  barrier.py        # Pricing Barrier option using closed-form Ruben-Reinstein and Monte-Carlo
+  vol_surface.py    # Simulate market vol data, calibrate under SVI and interpret relevant volatility
 
 tests/
   test_payoff.py
@@ -62,6 +63,8 @@ tests/
 
 notebooks/
   DerivativesPricing.ipynb  # Full project walkthrough + ideas for extensions
+  Exotics,ipynb   # Project Extension to exotics pricing with heding simulation and PnL recording using underlying and vanillas
+  Volatility_Surface,ipynb    # Project Extension to volatility surface calibration
 
 ---
 
@@ -81,6 +84,9 @@ notebooks/
 - **Extensions**
   - Dividend yield support
   - Framework for adding exotic options
+  - Volatility surface calibration [Updated 08-10-25]
+  - Risk & Hedging simulation [Updated 07-10-25]
+  - Structuring/QIS extension 
 
 ---
 
