@@ -45,27 +45,24 @@ python src/deriv_pricing/monte_carlo.py
 
 ## 📁 Package Layout
 
+```bash
 src/deriv_pricing/
-  payoff.py         # Vanilla option payoffs + put-call parity helpers
-  binomial.py       # CRR binomial tree pricer (Euro & American) + Delta
-  monte_carlo.py    # Monte Carlo pricer with antithetic variates
-  greeks.py         # Shared Greeks utilities (finite difference)
-  utils.py          # Common helpers (e.g., discounting)
-  black_scholes.py  # Black–Scholes pricers + closed-form Greeks
-  implied_vol.py    # Implied volatility solvers (Brentq, Newton, Bisection)
-  barrier.py        # Pricing Barrier option using closed-form Ruben-Reinstein and Monte-Carlo
-  vol_surface.py    # Simulate market vol data, calibrate under SVI and interpret relevant volatility
-
-tests/
-  test_payoff.py
-  test_binomial.py
-  test_monte_carlo.py
+│
+├── payoff.py          # Vanilla option payoffs + put-call parity helpers
+├── binomial.py        # CRR binomial tree pricer (Euro & American) + Delta
+├── monte_carlo.py     # Monte Carlo pricer with antithetic variates
+├── greeks.py          # Shared Greeks utilities (finite difference)
+├── utils.py           # Common helpers (e.g., discounting)
+├── black_scholes.py   # Black–Scholes pricers + closed-form Greeks
+├── implied_vol.py     # Implied volatility solvers (Brentq, Newton, Bisection)
+├── barrier.py         # Pricing Barrier option using closed-form Reiner–Rubinstein and Monte Carlo
+└── vol_surface.py     # Simulate market vol data, calibrate under SVI and interpret volatility surface
 
 notebooks/
-  DerivativesPricing.ipynb  # Full project walkthrough + ideas for extensions
-  Exotics,ipynb   # Project Extension to exotics pricing with heding simulation and PnL recording using underlying and vanillas
-  Volatility_Surface,ipynb    # Project Extension to volatility surface calibration
-
+├── DerivativesPricing.ipynb        # Full project walkthrough + ideas for extensions
+├── Exotics.ipynb                   # Project extension to exotics pricing with hedging simulation & PnL tracking
+└── Volatility_Surface.ipynb        # Project extension to volatility surface calibration
+```
 ---
 
 ## 📚 Features
